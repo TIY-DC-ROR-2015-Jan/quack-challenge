@@ -1,0 +1,16 @@
+<h1>Quack#index</h1>
+<p>Find me in app/views/quack/index.html.erb</p>
+
+<h3> All phrases </h3>
+<%= @quacks %>
+
+<%= form_for :quack, url: quack_path do |f| %>
+<p>
+  <%= f.label :phrase %> </br>
+  <%= f.text_field :phrase %>
+</p>
+
+<p>
+<%= f.submit %>
+</p>
+<% end %>
